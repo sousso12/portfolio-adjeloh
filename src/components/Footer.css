@@ -1,0 +1,132 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background: #050816;
+    padding: 60px 20px 30px;
+    border-top: 1px solid rgba(0, 140, 255, 0.1);
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    margin-bottom: 40px;
+}
+
+/* LOGO */
+.footer-logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #008cff;
+    cursor: pointer;
+}
+
+/* LIENS */
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #008cff;
+}
+
+/* SOCIALS */
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 140, 255, 0.2);
+    background: rgba(0, 140, 255, 0.05);
+
+    color: #b0b0b0;
+    font-size: 1.1rem;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.footer-social-link:hover {
+    border-color: #008cff;
+    background: rgba(0, 140, 255, 0.15);
+    color: #008cff;
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(0, 140, 255, 0.2);
+}
+
+/* SEPARATEUR */
+.footer-divider {
+    max-width: 1000px;
+    margin: 0 auto 25px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* BOTTOM */
+.footer-bottom {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    font-size: 0.82rem;
+    color: #555;
+}
+
+.footer-made {
+    font-size: 0.82rem;
+    color: #555;
+}
+
+.footer-heart {
+    color: #008cff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

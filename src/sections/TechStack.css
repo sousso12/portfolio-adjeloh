@@ -1,0 +1,147 @@
+.techstack {
+    position: relative;
+    width: 100%;
+
+    background: #050816;
+
+    padding: 100px 20px;
+}
+
+.techstack-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.techstack-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.techstack-tag {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #008cff;
+    margin-bottom: 15px;
+}
+
+.techstack-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.techstack-title-blue {
+    color: #008cff;
+}
+
+.techstack-subtitle {
+    font-size: 1rem;
+    color: #b0b0b0;
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* CATEGORIES */
+.techstack-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.techstack-category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #b0b0b0;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 140, 255, 0.15);
+}
+
+/* GRID */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* CARDS */
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 20px 25px;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    background: rgba(255, 255, 255, 0.03);
+
+    cursor: default;
+
+    transition: all 0.3s ease;
+
+    min-width: 90px;
+}
+
+.tech-card:hover {
+    border-color: var(--tech-color);
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px color-mix(in srgb, var(--tech-color) 30%, transparent);
+}
+
+.tech-icon {
+    font-size: 2rem;
+    color: var(--tech-color);
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover .tech-icon {
+    transform: scale(1.15);
+}
+
+.tech-name {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #b0b0b0;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .techstack-title {
+        font-size: 2rem;
+    }
+
+    .tech-grid {
+        gap: 12px;
+    }
+
+    .tech-card {
+        padding: 15px 18px;
+        min-width: 75px;
+    }
+
+    .tech-icon {
+        font-size: 1.6rem;
+    }
+}
