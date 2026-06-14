@@ -34,6 +34,18 @@ const projects = [
     },
     {
         id: 3,
+        name: "GestiPro Togo",
+        description: "Application mobile de gestion de stock, facturation et suivi des ventes pour les boutiques, artisans et vendeurs de marché togolais.",
+        techs: ["Flutter", "Spring Boot", "MySQL"],
+        category: "Mobile",
+        links: [
+            { label: "Backend", url: "https://github.com/sousso12/gestipro-togo-backend" },
+            { label: "Frontend", url: "https://github.com/sousso12/gestipro-togo-frontend" },
+        ],
+        featured: true,
+    },
+    {
+        id: 4,
         name: "My Other Self",
         description: "Application mobile de journal intime sécurisé. Expérience utilisateur intime et fluide avec Flutter, sauvegarde des entrées via API Node.js.",
         techs: ["Flutter", "Node.js", "Dart"],
@@ -45,7 +57,7 @@ const projects = [
         featured: false,
     },
     {
-        id: 4,
+        id: 5,
         name: "ScanPay",
         description: "Application mobile de paiement via QR Code. Transactions rapides et sécurisées grâce à Flutter et Firebase en temps réel.",
         techs: ["Flutter", "Firebase", "Node.js", "Dart"],
@@ -56,7 +68,7 @@ const projects = [
         featured: false,
     },
     {
-        id: 5,
+        id: 6,
         name: "CIM-COPRES",
         description: "API REST complète pour la gestion interne de l'entreprise CIM-COPRES. Architecture robuste et sécurisée 100% Java avec Spring Boot.",
         techs: ["Spring Boot", "Java", "REST API"],
@@ -67,7 +79,7 @@ const projects = [
         featured: false,
     },
     {
-        id: 6,
+        id: 7,
         name: "CineAdmin",
         description: "Application web de gestion de cinéma. Interface Vue.js intuitive connectée à une API Flask pour gérer films, séances et réservations.",
         techs: ["Vue.js", "Flask", "Python"],
